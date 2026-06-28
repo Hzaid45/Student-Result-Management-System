@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SRMS</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/image/cap.svg" alt=""/>
+      <h1>STUDENT RESULT MANAGEMENT SYSTEM</h1>
+    </header>
+
+    <!-- Top Section -->
+    <section class="top-container">
+
+        <!-- Add Student Card -->
+        <div class="student-form-card">
+
+            <div class="card-heading">
+                <h2>Add New Student</h2>
+            </div>
+
+            <div class="inputs">
+
+                <div class="input-box">
+                    <label>Student Name</label>
+                    <input type="text" id="name" placeholder="Enter student name">
+                </div>
+
+                <div class="input-box">
+                    <label>Marks</label>
+                    <input type="number" id="marks" placeholder="Enter marks">
+                </div>
+
+                <button id="addBtn">
+                    Add Student
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Action Card -->
+        <div class="action-card">
+
+            <div class="card-heading">
+                <h2>Actions</h2>
+            </div>
+
+            <div class="action-buttons">
+
+                <button id="totalMarksBtn">
+                    Total Marks
+                </button>
+
+                <button id="passedBtn">
+                    Passed Students
+                </button>
+
+                <button id="topStudentBtn">
+                    Top Student
+                </button>
+
+                <button id="resetBtn">
+                    Reset Data
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student List -->
+    <section class="student-list-card">
+
+        <div class="card-heading">
+            <img src="assets/image/list.svg" alt="list image" width="30px">
+            <h2>Student List</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Marks</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTableBody">
+
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Result Section -->
+    <section class="result-card">
+
+        <div class="card-heading">
+            <img src="assets/image/result.svg" alt="" width="30px">
+            <h2>Results</h2>
+        </div>
+
+        <div class="result-boxes">
+
+            <div class="result-box">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="result-box">
+                <h3>Total Marks</h3>
+                <p id="totalMarks">0</p>
+            </div>
+
+            <div class="result-box">
+                <h3>Passed Students</h3>
+                <p id="passedStudents">0</p>
+            </div>
+
+            <div class="result-box">
+                <h3>Top Student</h3>
+                <p id="topStudent">0</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>Student Result Management System © 2026</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
